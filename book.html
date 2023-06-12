@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+       
+        .heading-title
+        {
+            font-family: 'Aref Ruqaa Ink', serif;
+            padding: 60px;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        div{
+          font-size: 120%;
+         
+        }
+        .btn{
+            font-size: large;
+            background-color: black;
+        border: none;
+        color: #fff;
+        padding: 0.5%;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+        input{
+            font-size: 80%;
+        }
+        .heading{
+            padding: 60px;
+            color:white;
+            background-image: url("images/h1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        body{
+           
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url("images/book.png");
+ 
+        }
+        
+        </style>
+</head>
+<body>
+    <center>
+    <div class="heading">
+        <h1>BOOK NOW</h1>
+     </div>
+     
+     
+     <section class="booking">
+     
+        <h1 class="heading-title">Book Your Trip!</h1>
+     
+        <form action="book_form.php" method="post" class="book-form">
+     
+           <div class="flex">
+              <div class="inputBox">
+                 <span>Name :</span>
+                 <input type="text" placeholder="enter your name" name="name">
+              </div>
+              <br>
+              <div class="inputBox">
+                 <span>Email :</span>
+                 <input type="email" placeholder="enter your email" name="email">
+              </div><br>
+              <div class="inputBox">
+                 <span>Phone :</span>
+                 <input type="number" placeholder="enter your number" name="phone">
+              </div>
+              <br>
+              <div class="inputBox">
+                 <span>Address :</span>
+                 <input type="text" placeholder="enter your address" name="address">
+              </div>
+              <br>
+              <div class="inputBox">
+                 <span>Where to :</span>
+                 <input type="text" placeholder="place you want to visit" name="location">
+              </div>
+              <br>
+              <div class="inputBox">
+                 <span>How many :</span>
+                 <input type="number" placeholder="number of guests" name="guests">
+              </div>
+              <br>
+              <div class="inputBox">
+                 <span>Arrivals :</span>
+                 <input type="date" name="arrivals">
+              </div>
+              <br>
+              <div class="inputBox">
+                 <span>Leaving :</span>
+                 <input type="date" name="leaving">
+              </div>
+           </div>
+           <br>
+     
+           <input type="submit" value="Submit" class="btn" name="send">
+     
+        </form>
+     
+     </section>
+    </center> 
+</body>
+</html>
